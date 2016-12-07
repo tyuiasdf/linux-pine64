@@ -456,7 +456,7 @@ static int geth_phy_init(struct net_device *ndev)
 		printk("init ephy for pine64\n");
 		phy_write(phydev, 0x1f, 0x0007);//sel ext page
 		phy_write(phydev, 0x1e, 0x00a4);//sel page 164
-		phy_write(phydev, 0x1c, 0xd591);//only enable TX
+		phy_write(phydev, 0x1c, 0xb591);//only enable TX
 		phy_write(phydev, 0x1f, 0x0000);//sel page 0
 #endif
 
